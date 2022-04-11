@@ -3,7 +3,7 @@ Firstly, I would like to say sorry because I tried to go beyond in doing task fo
 
 The following steps to follow in order to run this task:
 
-1. Copy & paste the source code into folder "task.rates.ca"
+1. Copy & paste the source code into "htdocs/task.rates.ca/"
 2. MySQL DB import 
     - Create DB with name "ratesca_task"
     - import the db "ratesca_task.sql" copy that is present into source code. 
