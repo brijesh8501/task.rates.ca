@@ -1,5 +1,5 @@
 
-Firstly, I would like to say sorry because I tried to go beyond in doing task for designing/backend and also, checked Rates.ca website and replicate some design items into this task.
+Firstly, I would like to say sorry because I tried to go beyond in doing task for designing/backend and also, checked Rates.ca website and replicate few design items into this task.
 
 The following steps to follow in order to run this task:
 
