@@ -3524,11 +3524,13 @@ const loginRedirect = () => {
 
 // window/outside click close side nav
 document.getElementById('body-wrapper').onclick = (e) => {
+    const sideNavWidth = document.getElementById('sidenav').style.width;
     if (e.target.id !== "hamburger-menu" && e.target.id !== "sidenav") {
-        closeNav();
+        if(sideNavWidth === "350px"){
+            closeNav();
+        }
     }
 };
-
 
 // reset quote form
 const resetForm = ( vehicleInfo ) => {
