@@ -1,0 +1,19 @@
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+ </IfModule>
+
+ # Return 404 if original request is .php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteCond %{REQUEST_FILENAME} !request.php
+RewriteRule .* - [L,R=404]
+
+Options -Indexes
+
+RewriteRule   ^(/task.rates.ca/)?quote/list/$										$1quote/quote-list.php
+
+RewriteRule   ^(/task.rates.ca/)?quote/create/$										$1quote/quote-insertedit.php
+
+RewriteRule   ^(/task.rates.ca/)?success/thank-you/$										$1message/thank-you.php
